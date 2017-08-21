@@ -36,8 +36,7 @@ ENV IDEA_VER ideaIC-2017.2.2
 
 RUN curl -SL https://download.jetbrains.com/idea/$IDEA_VER.tar.gz | \
 		tar -f - -xz --exclude "idea*/jre64" -f - \
-    && ln -s $(find /usr/local/* -name "idea*" -type d -maxdepth 0) /usr/local/idea \
-    && if [ ! -d ${HOME}/.autoenv ];then git clone git://github.com/kennethreitz/autoenv.git ${HOME}/.autoenv; fi
+    && ln -s $(find /usr/local/* -name "idea*" -type d -maxdepth 0) /usr/local/idea
 
 WORKDIR /
 
