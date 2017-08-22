@@ -6,8 +6,8 @@ LABEL Description="alpine desktop env with ide (over xfce with novnc, xrdp and o
 # install openjdk7
 ################################################################################
 ENV JAVA_HOME=/usr/lib/jvm/java-1.7-openjdk
-RUN apk add --no-cache openjdk7 && \
-    ln -sf "${JAVA_HOME}/bin/"* "/usr/bin/"
+RUN apk add --no-cache openjdk7
+#    ln -sf "${JAVA_HOME}/bin/"* "/usr/bin/"
 
 ################################################################################
 # install openjdk8
@@ -23,9 +23,7 @@ RUN { \
 ENV JAVA_VERSION 8u131
 ENV JAVA_ALPINE_VERSION 8.131.11-r2
 RUN set -x \
-    && apk add --no-cache openjdk8="$JAVA_ALPINE_VERSION" \
-    && ln -s ${JAVA_HOME} /usr/lib/jvm/openjdk
-ENV JAVA_HOME /usr/lib/jvm/openjdk
+    && apk add --no-cache openjdk8="$JAVA_ALPINE_VERSION"
 ENV PATH $PATH:${JAVA_HOME}/jre/bin:${JAVA_HOME}/bin
 
 ################################################################################
