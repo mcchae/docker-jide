@@ -1,13 +1,13 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Exec=/usr/local/pycharm/bin/pycharm.sh
-Icon=/usr/local/pycharm/bin/pycharm.png
+Exec=/usr/local/idea/bin/idea.sh
+Icon=/usr/local/idea/bin/idea.png
 StartupNotify=true
 Terminal=false
 Categories=Utility;X-XFCE;X-Xfce-Toplevel;
 OnlyShowIn=XFCE;
-Name=PyCharm CE
-Comment=PyCharm Community Edition
+Name=IntelliJ CE
+Comment=IntelliJ Community Edition
 X-XFCE-Source=file:///usr/share/applications/xfce4-run.desktop
 Path=/home/toor
