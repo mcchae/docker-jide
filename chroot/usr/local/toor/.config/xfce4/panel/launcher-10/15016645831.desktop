@@ -10,4 +10,4 @@ OnlyShowIn=XFCE;
 Name=IntelliJ CE
 Comment=IntelliJ Community Edition
 X-XFCE-Source=file:///usr/share/applications/xfce4-run.desktop
-Path=/home/toor
+Path=/root
